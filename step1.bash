@@ -34,13 +34,13 @@ sudo apt-get install -y build-essential
 
 #[ "$ROS_VER" = "kinetic" ] && sudo apt-get install -y ros-${ROS_VER}-roslaunch
 
-grep -F "source /opt/ros/$ROS_VER/setup.bash" ~/.bashrc ||
+# grep -F "source /opt/ros/$ROS_VER/setup.bash" ~/.bashrc ||
 echo "source /opt/ros/$ROS_VER/setup.bash" >> ~/.bashrc
 
-grep -F "ROS_MASTER_URI" ~/.bashrc ||
+# grep -F "ROS_MASTER_URI" ~/.bashrc ||
 echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 
-grep -F "ROS_HOSTNAME" ~/.bashrc ||
+# grep -F "ROS_HOSTNAME" ~/.bashrc ||
 echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
 
@@ -53,3 +53,5 @@ echo '* $ source ~/.bashrc          *'
 echo '* after that, try             *'
 echo '* $ LANG=C roscore            *'
 echo '*******************************'
+
+source ~/.bashrc
