@@ -19,13 +19,13 @@ curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE
 
 
 curl -k https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | sudo apt-key add -
-sudo apt-get update || echo ""
+sudo apt update || echo ""
 
-sudo apt-get install -y ros-${ROS_VER}-ros-base
+sudo apt install -y ros-${ROS_VER}-ros-base
 
 ls /etc/ros/rosdep/sources.list.d/20-default.list && sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
 
-sudo apt-get install -y python-pip
+sudo apt install -y python-pip
 
 
 sudo pip install -U -y rosdep
