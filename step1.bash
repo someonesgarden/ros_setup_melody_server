@@ -3,7 +3,6 @@
 UBUNTU_VER=$(lsb_release -sc)
 #ROS_VER=kinetic
 ROS_VER=melodic
-[ "$UBUNTU_VER" = "trusty" ] && ROS_VER=indigo
 
 echo "deb http://packages.ros.org/ros/ubuntu $UBUNTU_VER main" > /tmp/$$-deb
 sudo mv /tmp/$$-deb /etc/apt/sources.list.d/ros-latest.list
