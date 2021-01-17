@@ -21,6 +21,10 @@ sudo apt-get update || echo ""
 sudo apt-get install -y ros-${ROS_VER}-ros-base
 
 ls /etc/ros/rosdep/sources.list.d/20-default.list && sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
+
+sudo apt-get install python-pip
+sudo pip install -U rosdep
+
 sudo rosdep init 
 rosdep update
 

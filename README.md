@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/ryuichiueda/ros_setup_scripts_Ubuntu16.04_server.svg?branch=master)](https://travis-ci.org/ryuichiueda/ros_setup_scripts_Ubuntu16.04_server)
 
 
-# ros_setup_scripts_Ubuntu16.04
+# ros_setup_melody
 
-ROS (Kinetic Kame) setup scripts for Ubuntu 16.04
+ROS (melody) setup scripts for Ubuntu 16.04
 
 # scripts
 
