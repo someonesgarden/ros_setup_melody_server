@@ -17,7 +17,7 @@ set -vx
 
 curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -
 # curl -k https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | sudo apt-key add -
-
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6B05F25D762E3157
 
 sudo apt-get update || echo ""
 
