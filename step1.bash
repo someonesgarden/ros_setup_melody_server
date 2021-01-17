@@ -26,7 +26,7 @@ sudo apt-get install python-pip
 sudo pip install -U rosdep
 
 sudo rosdep init 
-rosdep update
+sudo rosdep update
 
 sudo apt-get install -y python-rosinstall
 sudo apt-get install -y build-essential
