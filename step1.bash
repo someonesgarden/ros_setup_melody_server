@@ -26,8 +26,6 @@ sudo apt-get install -y ros-${ROS_VER}-ros-base
 ls /etc/ros/rosdep/sources.list.d/20-default.list && sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
 
 sudo apt-get install -y python-pip
-
-
 sudo pip-get install -U -y rosdep
 
 sudo rosdep init 
@@ -38,13 +36,13 @@ sudo apt-get install -y build-essential
 
 #[ "$ROS_VER" = "kinetic" ] && sudo apt-get install -y ros-${ROS_VER}-roslaunch
 
-# grep -F "source /opt/ros/$ROS_VER/setup.bash" ~/.bashrc ||
+grep -F "source /opt/ros/$ROS_VER/setup.bash" ~/.bashrc ||
 echo "source /opt/ros/$ROS_VER/setup.bash" >> ~/.bashrc
 
-# grep -F "ROS_MASTER_URI" ~/.bashrc ||
+grep -F "ROS_MASTER_URI" ~/.bashrc ||
 echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 
-# grep -F "ROS_HOSTNAME" ~/.bashrc ||
+grep -F "ROS_HOSTNAME" ~/.bashrc ||
 echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
 
